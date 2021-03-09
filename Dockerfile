@@ -7,6 +7,7 @@ COPY package*.json . ./
 
 RUN apk update && npm install
 RUN npm install pm2 -g
+#RUN npm install cors
 
 COPY . /usr/src/app
 
